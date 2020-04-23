@@ -1,10 +1,14 @@
 
-var menuBar = document.getElementsByClassName("menu-options")[0];
-var options = document.querySelector("header ul");
+var menuBar = document.getElementsByClassName("sandwich")[0];
+var options = document.querySelector(".menu-options");
 var smooth = document.querySelector(".smoothscroll");
 
 menuBar.addEventListener("click", function(){
     options.classList.toggle("change");
+}, false);
+
+options.addEventListener("click", function(){
+    this.classList.toggle("change");
 }, false);
 
 window.onscroll = function() {scrollFunction()};
