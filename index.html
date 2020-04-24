@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Made In Roca</title>
 </head>
-<body class="smooth">
-    <header>
+<body>
+    <header id="up">
         <img src="./logos/logo.jpg" alt="Logo da Made In Roça">  
         
         <div class="sandwich">
@@ -21,10 +21,10 @@
 
         <nav class="menu-options">
             <ul>
-                <li><a href="#top">Home</a></li>
-                <li><a href="#portifolio">Portifólio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a onclick="go('#top')">Home</a></li>
+                <li><a onclick="go('#portifolio')">Portifólio</a></li>
+                <li><a onclick="go('#about')">About</a></li>
+                <li><a onclick="go('#contact')">Contato</a></li>
             </ul>
         </nav>                  
 
@@ -66,7 +66,7 @@
                 <div class="about-profile">
                     <h3>Perfil</h3>
                     <p>
-                        Identificar abordagens aprimoradas e soluções aprimoradas para os desafios de negócios
+                        Identificar abordagens aprimoradas e soluções inovadoras para os desafios de negócios
                         são atividades que me motivam e inspiram. Exploração, busca e motivação são minha
                         estrutura para o sucesso. Acredito que novas perspectivas e novas técnicas ajudam
                         as empresas a evoluir e crescer. Como participante de uma equipe, sempre busco maneiras
@@ -243,7 +243,7 @@
     </footer>
 
     <div class="smoothscroll">
-        <a href="#top">&#171;</a>
+        <a onclick="go('#up')">&#171;</a>
     </div>
 
     <script src="./js/script.js"></script>
